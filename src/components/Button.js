@@ -8,4 +8,6 @@ const Button = ({ onClick, className, children }) => {
   );
 }
 
+Button.defaultProps = { className: "" };
+
 export default Button;
