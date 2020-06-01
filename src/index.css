@@ -1,28 +1,52 @@
 body {
- color:#222;
- background: #f4f4f4;
- font: 400 14px CoreSans, Arial, sans-serif;
+  color: #222;
+  background: #f4f4f4;
+  font: 400 14px CoreSans, Arial, sans-serif;
 }
-
-a{
-  color:#222;
+.App {
+  margin: 20px;
 }
-a:hover{
+a {
+  color: #222;
+}
+a:hover {
   text-decoration: underline;
 }
 
-.App{
-  margin: 20px;
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+input {
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: 1px solid #dddddd;
 }
 
-.interactions{
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  background: transparent;
+  color: #808080;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #222;
+}
+
+.interactions {
   text-align: center;
 }
 
-.table{
+.table {
   margin: 20px 0;
 }
-.table-row{
+.table-row {
   display: flex;
   line-height: 24px;
   white-space: nowrap;
@@ -31,8 +55,33 @@ a:hover{
   background: #ffffff;
   border: 1px solid #e3e3e3;
 }
+.table-header {
+  display: flex;
+  line-height: 24px;
+  font-size: 16px;
+  padding: 0 10px;
+  justify-content: space-between;
+}
 
-.button-inline{
+.table-header > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
+
+.table-row > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
+
+.table-empty {
+  margin: 200px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.button-inline {
   border-width: 0;
   background: transparent;
   color: inherit;
@@ -43,3 +92,7 @@ a:hover{
   cursor: pointer;
 }
 
+.button-active {
+  border-radius: 0;
+  border-bottom: 1px solid #38bb6c;
+}
